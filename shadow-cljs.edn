@@ -1,0 +1,9 @@
+{:source-paths ["src", ""] 
+:builds {:app {:target :browser
+                :output-dir "public/js"
+                :asset-path "js"
+                :modules {:main {:entries [proj1.core]}}
+                :devtools {;;:before-load proj1.core/stop
+                           ;;:after-load proj1.core/start
+                           :http-root "public"
+                           :http-port 8020}}}}
